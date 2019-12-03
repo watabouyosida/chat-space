@@ -40,9 +40,9 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null :false|
+|name|string|null :false|
 |email|string|null :false, unique: true|
-|pass|string|null :false, unique: true|
+|pass|text|null :false, unique: true|
 
 ### Assocation
 - has_many :groups_users
