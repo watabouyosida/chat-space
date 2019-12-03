@@ -27,8 +27,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|
+|image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -42,7 +42,7 @@ Things you may want to cover:
 |------|----|-------|
 |name|text|null :false|
 |email|string|null :false, unique: true|
-|pass|text|null :false, unique: true|
+|pass|string|null :false, unique: true|
 
 ### Assocation
 - has_many :groups_users
@@ -53,7 +53,7 @@ Things you may want to cover:
 
 |Coulmn|Type|Options|
 |------|----|-------|
-|name|text|null :false|
+|name|string|null :false|
 
 ### Assocation
 - has_many :group_users
