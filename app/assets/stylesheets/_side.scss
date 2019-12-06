@@ -34,16 +34,21 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0px;
-    &__box{
-      &--name{
-        font-size: 15px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-      &--message{
-        font-size: 11px;
-        padding-bottom: 40px;
+    .box{
+      &__link{
+        text-decoration: none;
+        &--name{
+          font-size: 15px;
+          padding-top: 20px;
+          padding-bottom: 5px;
+          color: white;
+        }
+        &--message{
+          font-size: 11px;
+          padding-bottom: 40px;
+          color: white;
+        }
       }
     }
-    }
+  }
 }
