@@ -11,10 +11,10 @@
      =link_to edit_user_path(current_user), class: "contents__btn" do
       = icon('fas', 'cog')
  .group-list
-  .group-list__box
-   .group-list__box--name aaa
-   .group-list__box--message aaa
-  
-    
-
-  
+  .box
+   - current_user.groups.each do |group|
+    = link_to group_messages_path(group), class: "box__link"  do
+     .box__link--name 
+      = group.name
+     .box__link--message 
+      メッセージはまだありません。
