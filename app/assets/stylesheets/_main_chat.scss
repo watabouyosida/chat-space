@@ -25,24 +25,24 @@
       text-decoration: none;
     }
   }
-  .message-list{
+  .message{
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
-    &__box{
+    &-box{
       margin-left: 40px;
       padding-bottom: 46px;
-      &--name{
+      .message-name{
         padding-bottom: 12px;
-        .name{
+        &__user-name{
           color: #333333;
           font-size: 16px;
         }
-        .date{
+        &__date{
           color: #999999;
           font-size: 12px;
         }
       }
-      &--message{
+      .message-message{
         color: #434A54;
         font-size: 14px;
       }
@@ -52,34 +52,37 @@
   .message-form{
     background-color: #d2d2d2;
     height: 90px;
-    display: flex;
-    align-items: center;
-    padding: 20px 40px;
-    .input-box{  
-      height: 50px;
-      width: 100%;
-      position: relative;
-      &__text{
+    .new_message{
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      .input-box{  
         height: 50px;
         width: 100%;
-        padding: 0 40px 0 10px;
-      }
-      &__icon{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        .file{
-          display: none;
+        position: relative;
+        .form__message{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+        }
+        .image{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          .hidden{
+            display: none;
+          }
         }
       }
+      .form__submit{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;  
+      }
     }
-    .submit-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color: white;  
-    }
+
   }
 }
