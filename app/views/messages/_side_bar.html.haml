@@ -1,20 +1,20 @@
 .side
- .user-name
-  .user-name__box
-   %p.user-name__box--name 
-    = current_user.name
-   %ul.user-name__box--icon
-    %li.edit-icon
-     =link_to new_group_path, class: "contents__btn" do
-      = icon('fas', 'edit')
-    %li.cog-icon
-     =link_to edit_user_path(current_user), class: "contents__btn" do
-      = icon('fas', 'cog')
- .group-list
-  .box
-   - current_user.groups.each do |group|
-    = link_to group_messages_path(group), class: "box__link"  do
-     .box__link--name 
-      = group.name
-     .box__link--message 
-      メッセージはまだありません。
+  .user-name
+    .user-name__box
+      %p.user-name__box--name 
+        = current_user.name
+      %ul.user-name__box--icon
+        %li.edit-icon
+          =link_to new_group_path, class: "contents__btn" do
+            = icon('fas', 'edit')
+        %li.cog-icon
+          =link_to edit_user_path(current_user), class: "contents__btn" do
+            = icon('fas', 'cog')
+  .group-list
+    .box
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group), class: "box__link"  do
+          .box__link--name 
+            = group.name
+          .box__link--message 
+            = group.show_last_message
