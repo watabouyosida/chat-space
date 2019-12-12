@@ -27,7 +27,9 @@
   }
   .message{
     background-color: #fafafa;
+    box-sizing: border-box;
     height: calc(100vh - 100px - 90px);
+    overflow: scroll;
     &-box{
       margin-left: 40px;
       padding-bottom: 46px;
