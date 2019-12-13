@@ -56,7 +56,7 @@ $(function(){
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight}, 'fast');
     })
     .fail(function() {
-      console.log('error');
+      alert('error');
     });
   };
   
