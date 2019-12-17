@@ -20,8 +20,14 @@
       }
     }
     &__edit-btn{
-      padding: 28px 0 20px;
+      height: 40px;
+      color: #38aef0;
       line-height: 40px;
+      padding: 0 20px;
+      margin-top: 30px;
+      border: solid 1px #38aef0;
+      position: absolute;
+      right: 40px;
       text-decoration: none;
     }
   }
